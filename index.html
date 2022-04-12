@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+    </head>
+    <body onload="length(); volume(); mass()">
+        <div class="container">
+            <h1>Metric/Imperial unit conversion</h1>
+            <h2 id="num"></h2>
+            <input type="text" id="text-box"><button id="submit-button" onclick="getNum();length(); volume(); mass()">Submit</button>
+        </div>
+        
+        <div class="conversions">
+            <h3>Length (Meter/Feet)</h3>
+            <p id="length"></p>
+            
+            <h3>Volume (Liters/Gallons)</h3>
+            <p id="volume"></p>
+            
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="mass"></p>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html> 
